@@ -5,7 +5,7 @@ from movement import no_delay
 
 def draw_animation(num_frames, sleeptime):
     # This function animates a ball getting bigger and smaller
-    ball_size = 40
+
     for i in range(num_frames):
 
         with no_delay():

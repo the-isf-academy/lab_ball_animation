@@ -15,8 +15,6 @@ def draw_animation(num_frames, sleeptime):
 
             if i  < 50:
                 y_position = y_position - 5
-            else:
-                y_position = y_position + 5
 
             goto (0,y_position)
 
