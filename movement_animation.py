@@ -2,10 +2,14 @@ from turtle import *
 import time
 from basic_shapes import ball
 from helpers import no_delay, fly
+import settings
 
 def draw_animation(num_frames, sleeptime):
-    # This function animates a ball moving up and down
+    # This function should animatee a ball moving up and down
 
+
+    # sets the starting position of the ball
+    x_position = 0
     y_position = 0
 
     for i in range(num_frames):
@@ -13,11 +17,9 @@ def draw_animation(num_frames, sleeptime):
         with no_delay():
             clear()
 
-            
+            fly(x_position, y_position)
 
-            fly(0,y_position)
-
-            ball('purple',60)
+            ball('light blue',60)
 
 
         update()
@@ -33,7 +35,7 @@ def main():
     hideturtle()
     
     for i in range(3):
-        draw_animation(100, .005)
+        draw_animation(settings.movement_animation_num_frames, settings.movement_animation_sleeptime)
 
     input("Press enter...")
 

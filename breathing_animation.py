@@ -5,18 +5,14 @@ from helpers import no_delay
 import settings
 
 def draw_animation(num_frames, sleeptime):
-    # This function animates a ball getting bigger and smaller
+    # This function should animate a ball getting bigger and smaller
+
     ball_size = 100
+
     for i in range(num_frames):
 
         with no_delay():
             clear()
-
-            # YOUR CODE GOES HERE#
-            if i  < 50:
-                ball_size = ball_size + 1
-            else:
-                ball_size = ball_size - 1
 
 
             ball('purple',ball_size)
