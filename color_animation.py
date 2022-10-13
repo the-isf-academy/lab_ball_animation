@@ -1,7 +1,7 @@
 from turtle import *
 import time
 from basic_shapes import ball, box
-from movement import no_delay
+from helpers import no_delay
 
 def draw_animation(num_frames, sleeptime):
     # This function animates a ball getting bigger and smaller
@@ -20,13 +20,13 @@ def draw_animation(num_frames, sleeptime):
             
 
 
-        screen.update()
+        update()
         time.sleep(sleeptime)
 
 
 
 
-if __name__ == '__main__':
+def main():
     screen = Screen()
     screen.setup(600,600)
     bgcolor('dark blue')
@@ -37,6 +37,8 @@ if __name__ == '__main__':
         draw_animation(100, .5)
 
     input("Press enter...")
+
+main()
 
 
 
