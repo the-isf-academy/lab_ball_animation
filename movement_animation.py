@@ -1,7 +1,7 @@
 from turtle import *
 import time
 from basic_shapes import ball
-from helpers import no_delay
+from helpers import no_delay, fly
 
 def draw_animation(num_frames, sleeptime):
     # This function animates a ball moving up and down
@@ -15,8 +15,11 @@ def draw_animation(num_frames, sleeptime):
 
             if i  < 50:
                 y_position = y_position - 5
+            
+            else:
+                y_position = y_position + 5
 
-            goto (0,y_position)
+            fly(0,y_position)
 
             ball('purple',60)
 
