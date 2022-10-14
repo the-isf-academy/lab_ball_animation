@@ -34,6 +34,7 @@ def draw_animation(num_frames, sleeptime):
 def main():
     screen = Screen()
     screen.setup(600,600)
+    
 
     hideturtle()
     

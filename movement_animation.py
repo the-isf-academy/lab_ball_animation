@@ -19,6 +19,9 @@ def draw_animation(num_frames, sleeptime):
 
             fly(x_position, y_position)
 
+            x_position += 5
+            y_position -= 5
+
             ball('light blue',60)
 
 

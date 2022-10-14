@@ -18,7 +18,7 @@ def draw_animation(num_frames, sleeptime):
         with no_delay():
             clear()
 
-            ball_color = (ball_color_r, ball_color_g, ball_color_b,0.1)   
+            ball_color = (ball_color_r, ball_color_g, ball_color_b)   
 
             ball(ball_color,100)
 
