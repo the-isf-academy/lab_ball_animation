@@ -17,12 +17,7 @@ def draw_animation(num_frames, sleeptime):
 
             ball('purple',ball_size)
 
-            if i < num_frames/2:
-                ball_size += 1
-            else:
-                ball_size -= 1
-
-
+     
 
 
         update()
