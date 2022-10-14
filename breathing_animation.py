@@ -1,21 +1,28 @@
 from turtle import *
 import time
-from basic_shapes import ball
-from helpers import no_delay
+from basic_shapes import ball, box
+from helpers import no_delay, fly
 import settings
 
 def draw_animation(num_frames, sleeptime):
     # This function should animate a ball getting bigger and smaller
 
     ball_size = 100
+    fly(-0,-100)
 
     for i in range(num_frames):
 
         with no_delay():
             clear()
 
-
             ball('purple',ball_size)
+
+            if i < num_frames/2:
+                ball_size += 1
+            else:
+                ball_size -= 1
+
+
 
 
         update()

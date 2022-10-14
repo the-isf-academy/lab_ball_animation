@@ -1,6 +1,6 @@
 from turtle import *
 import time
-from basic_shapes import ball, box
+from basic_shapes import ball
 from helpers import no_delay
 import settings
 
@@ -11,17 +11,20 @@ def draw_animation(num_frames, sleeptime):
     # Sets starting values for the RGB value of the ball color
     ball_color_r = 166
     ball_color_g = 166
-    ball_color_b = 166
+    ball_color_b = 100
 
     for i in range(num_frames):
 
         with no_delay():
             clear()
 
-            ball_color = (ball_color_r, ball_color_g, ball_color_b)   
+            ball_color = (ball_color_r, ball_color_g, ball_color_b,0.1)   
 
             ball(ball_color,100)
-        
+
+            ball_color_b += 10
+            if ball_color_b > 255:
+                ball_color_b = 0
 
 
         update()
