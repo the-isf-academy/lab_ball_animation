@@ -1,6 +1,6 @@
 from turtle import *
 import time
-from basic_shapes import ball, box
+from basic_shapes import ball
 from helpers import no_delay, fly
 import settings
 
